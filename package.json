@@ -8,9 +8,10 @@
     "dev:turbo": "next dev --turbo",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",
-    "format:check": "prettier --check --ignore-path .gitignore .",
-    "format:fix": "prettier --write --ignore-path .gitignore ."
+    "eslint:check": "next lint",
+    "eslint:fix": "next lint --fix",
+    "prettier:check": "prettier --check --ignore-path .gitignore .",
+    "prettier:fix": "prettier --write --ignore-path .gitignore ."
   },
   "dependencies": {
     "immer": "^10.0.3",
