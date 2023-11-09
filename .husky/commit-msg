@@ -1,4 +1,4 @@
 #!/usr/bin/env sh
 . "$(dirname -- "$0")/_/husky.sh"
 
-git add . && pnpm lint-staged && git add .
+npx --no -- commitlint --edit ${1}

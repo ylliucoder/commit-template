@@ -13,6 +13,11 @@
     "prettier:check": "prettier --check --ignore-path .gitignore .",
     "prettier:fix": "prettier --write --ignore-path .gitignore ."
   },
+  "config": {
+    "commitizen": {
+      "path": "node_modules/cz-git"
+    }
+  },
   "dependencies": {
     "immer": "^10.0.3",
     "next": "14.0.1",
@@ -21,10 +26,15 @@
     "zustand": "^4.4.6"
   },
   "devDependencies": {
+    "@commitlint/cli": "^18.2.0",
+    "@commitlint/config-conventional": "^18.1.0",
     "@types/node": "^20.8.10",
     "@types/react": "^18",
     "@types/react-dom": "^18",
     "autoprefixer": "^10.0.1",
+    "commitizen": "^4.3.0",
+    "commitlint-config-cz": "^0.13.3",
+    "cz-git": "^1.7.1",
     "eslint": "^8",
     "eslint-config-next": "14.0.1",
     "eslint-config-prettier": "^9.0.0",
